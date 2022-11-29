@@ -1,0 +1,66 @@
+.col {
+  padding-right: 40px;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  align-items: start;
+}
+
+#header {
+  color: black;
+  margin-bottom: 60px;
+}
+
+.all-texto {
+  margin-left: 150px;
+  margin-top: 30px;
+}
+
+.button {
+  background: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border-color: black;
+  color: black;
+  font-size: 18px;
+  font-family: Arial;
+  margin-top: 30px;
+}
+
+.background {
+  background-image: url("src/assets/background3.webp");
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  height: 100vh;
+}
+
+.name {
+  padding: 3px;
+  margin-left: 45px;
+}
+
+.email {
+  padding-left: 214px;
+  margin-left: 42px;
+}
+
+.messagesub {
+  padding-bottom: 3px;
+}
+
+.message {
+  padding: 50px;
+  margin-left: 55px;
+}
+
+.line {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.ddd {
+  width: 51px;
+  margin-left: 70px;
+}

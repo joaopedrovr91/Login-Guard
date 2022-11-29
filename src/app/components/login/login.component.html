@@ -1,0 +1,32 @@
+<form (ngSubmit) = "submit()" [formGroup]="loginForm" #formDir="ngForm" class="background">
+  <div class="login-container">
+    <h2 class="letras-do-login">Login</h2>
+    <div class="campos-login">
+      <span class="letras-do-login">Usuário</span>
+      <input type="text" placeholder="Digite seu usuário" formControlName="usuario" required>
+    </div>
+    <div *ngIf="usuario.invalid && formDir.submitted" class="validation_error">
+      <p>O nome e obrigatório.</p>
+    </div>
+    <div class="campos-login">
+      <span class="letras-do-login">Senha</span>
+      <input type="password" placeholder="Digite sua senha" formControlName="senha" required>
+    </div>
+    <div *ngIf="senha.invalid && formDir.submitted" class="validation_error">
+      <p>A senha e obrigatória.</p>
+    </div>
+    <div class="checkbox-container">
+      <input type = "checkbox">
+      <span class="checkbox"> manter-me logado</span>
+    </div>
+    <button class="button">
+      Logar
+    </button>
+    <div class="background-secundaria">
+      <span class="background-secundaria-text"> Ainda não tem conta?</span>
+      <div class="background-secundaria-button">
+        Cadastre-se
+      </div>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,51 @@
+<!DOCTYPE html >
+<html class="background">
+<head>
+</head>
+<body class="all-texto">
+<div id="header">
+  <h1>Contact form</h1>
+  <p>Please fill in your information and we'll be sending your order in no time. </p>
+</div>
+<form [formGroup]="formGroup" (submit)="onButtonSaveClick()">
+  <table>
+    <tr class="line">
+      <td class="col"> Your Name</td>
+      <td>
+        <input formControlName="firstName" class="name" type="text" placeholder="First name"/>
+        <input formControlName="lastName" class="name" type="text" placeholder="Last name"/>
+      </td>
+    </tr>
+    <tr class="line">
+      <td class="col"> Your Email</td>
+      <td>
+        <input formControlName="email" class="email" type="text" placeholder="e.g.hello@contact.net"/>
+      </td>
+    </tr>
+    <tr class="line">
+      <td class="col"> Phone*</td>
+      <td>
+        <input formControlName="ddd" class="ddd" type="number" placeholder="DDD"/>
+        <input formControlName="phone" class="name" type="number" placeholder="XXXXX-XXXX"/>
+      </td>
+    </tr>
+    <tr class="line">
+      <td class="col"> Message Subject*</td>
+      <td>
+        <input formControlName="messageSub" class="messagesub" type="text" placeholder="Other"/>
+      </td>
+    </tr>
+    <tr class="line">
+      <td class="col"> Message*</td>
+      <td>
+        <input formControlName="message" class="message" type="text"/>
+      </td>
+    </tr>
+    <tr class="line">
+      <td class="col"> Verification*</td>
+    </tr>
+  </table>
+  <button type="submit" class="button">Submit Form</button>
+</form>
+</body>
+</html>
